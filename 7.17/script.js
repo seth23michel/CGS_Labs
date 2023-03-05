@@ -28,6 +28,7 @@ function playGuessingGame(numToGuess, totalGuesses = 10) {
     
     // If the user ran out of guesses, return 0
     return 0;
+
     
     // Helper function to generate the prompt text
     function getPromptText() {
