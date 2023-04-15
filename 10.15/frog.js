@@ -22,18 +22,19 @@ function drawFrog(canvas, x, y, direction = directions.UP) {
    switch (direction) {
       case directions.DOWN:
          // TODO: Translate, rotate, and translate
-         
+         context.rotate(Math.PI);
          break;
       case directions.LEFT:
          // TODO: Translate, rotate, and translate
-                  
+         context.rotate(-Math.PI / 2);         
          break;
       case directions.RIGHT:
          // TODO: Translate, rotate, and translate
-         
+         context.rotate(Math.PI / 2);
          break;
    }
 
+   context.translate(-frogImg.width / 2, -frogImg.height / 2);
    context.drawImage(frogImg, x, y);
 
    // Necessary so next call to drawFrog isn't rotated or translated
